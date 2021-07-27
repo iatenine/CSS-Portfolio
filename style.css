@@ -1,7 +1,11 @@
 :root {
   font-size: 16px;
   --navbar-color: lightblue;
+  --standard-text-color: black;
+  --subtle-text-color: rgb(40, 40, 40);
+  --light-grey: #cecece;
   --standard-margin: 1rem;
+  --max-box-height: 400px;
 }
 
 a {
@@ -10,22 +14,82 @@ a {
 }
 
 h2 {
-    font-size: 1.5rem;
+  /* Make font bold */
+  font-weight: 700;
+  font-size: 1.5rem;
 }
 
-section{
-    background-color: blueviolet;
-    margin-bottom: var(--standard-margin);
+h3 {
+  font-size: 1.25rem;
+}
+
+section,
+article {
+  border-radius: 10px;
+  border-style: ridge;
+  border-color: rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  padding: var(--standard-margin);
+}
+
+section {
+  border-width: 1px;
+}
+
+.hoverable:hover {
+  background-color: rgba(0, 0, 255, 0.1);
+  transition: 0.4s all ease-in;
+}
+
+form {
+  /* background-color: blueviolet; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+
+form > input {
+  /* min-width: 60rem; */
+  width: 90%;
+  background-color: var(--light-grey);
+}
+
+#my-image {
+  float: right;
+  max-height: 100%;
+  margin-left: var(--standard-margin);
+}
+
+section {
+  margin-bottom: var(--standard-margin);
+  margin-left: var(--standard-margin);
+  margin-right: var(--standard-margin);
+}
+
+article {
+  margin-top: var(--standard-margin);
+  margin-bottom: var(--standard-margin);
+}
+
+footer {
+  font-size: small;
+  color: var(--subtle-text-color);
+  text-align: center;
+}
+
+nav {
+  margin-bottom: var(--standard-margin);
 }
 
 .banner {
   max-height: 75px;
   display: flex;
-  /* background-color: orange; */
 }
 
 .img-box {
-  /* background-color: aqua; */
   flex-grow: 50;
 }
 
