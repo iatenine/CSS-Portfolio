@@ -9,6 +9,9 @@
   --light-grey: rgba(0, 0, 255, 0.1);
   --standard-margin: 1rem;
   --blue-overlay: rgba(0, 0, 255, 0.1);
+  --submit-button-color: rgb(0, 175, 255);
+  --submit-button-hover: rgb(0, 0, 223);
+  --light-text-color: rgb(255, 255, 255);
 }
 
 a {
@@ -42,8 +45,9 @@ article {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  /* align-content: center; */
 }
+
+
 
 .project {
   /* background-color: wheat; */
@@ -173,15 +177,28 @@ nav > ul > li {
   justify-content: space-evenly;
 }
 
+#submit-btn {
+    background-color: var(--submit-button-color);
+    color: var(--light-text-color);
+}
+
+#submit-btn:hover {
+    background-color: var(--submit-button-hover);
+    transition: 0.4s all ease-in;
+}
+
 .btn {
+    cursor: pointer;
   margin: var(--standard-margin);
   padding: var(--standard-margin);
   width: 30%;
+  border-radius: 10%;
 }
 
 /* Create media query breakpoint for mobile devices */
 @media (max-width: 768px) {
   .btn {
+      border-radius: 10%;
     width: 100%;
   }
 }
