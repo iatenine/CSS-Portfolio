@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto+Condensed&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto+Condensed&display=swap");
 
 :root {
   font-size: 20px;
-      font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: mintcream;
   --navbar-color: lightblue;
   --standard-text-color: black;
   --subtle-text-color: rgb(40, 40, 40);
@@ -38,7 +39,9 @@ article {
 }
 
 .project-image {
-  margin: var(--standard-margin);)
+  margin: var(--standard-margin);
+  /* width: 300px;
+  height: 300px; */
 }
 
 .gallery {
@@ -46,8 +49,6 @@ article {
   flex-wrap: wrap;
   justify-content: flex-start;
 }
-
-
 
 .project {
   /* background-color: wheat; */
@@ -95,11 +96,11 @@ form > textarea {
 }
 
 label {
-    display: inline;
-    }
+  display: inline;
+}
 input {
-    display: inline;
-    }
+  display: inline;
+}
 
 section > h2 {
   margin: var(--standard-margin);
@@ -183,17 +184,17 @@ nav > ul > li {
 }
 
 #submit-btn {
-    background-color: var(--submit-button-color);
-    color: var(--light-text-color);
+  background-color: var(--submit-button-color);
+  color: var(--light-text-color);
 }
 
 #submit-btn:hover {
-    background-color: var(--submit-button-hover);
-    transition: 0.4s all ease-in;
+  background-color: var(--submit-button-hover);
+  transition: 0.4s all ease-in;
 }
 
 .btn {
-    cursor: pointer;
+  cursor: pointer;
   margin: var(--standard-margin);
   padding: var(--standard-margin);
   width: 30%;
@@ -203,7 +204,7 @@ nav > ul > li {
 /* Create media query breakpoint for mobile devices */
 @media (max-width: 768px) {
   .btn {
-      border-radius: 10%;
+    border-radius: 10%;
     width: 100%;
   }
 }
