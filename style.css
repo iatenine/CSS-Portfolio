@@ -3,9 +3,9 @@
   --navbar-color: lightblue;
   --standard-text-color: black;
   --subtle-text-color: rgb(40, 40, 40);
-  --light-grey: #cecece;
+  --light-grey: rgba(0, 0, 255, 0.1);
   --standard-margin: 1rem;
-  --max-box-height: 400px;
+  --blue-overlay: rgba(0, 0, 255, 0.1);
 }
 
 a {
@@ -29,7 +29,12 @@ article {
   border-style: ridge;
   border-color: rgba(0, 0, 0, 0.2);
   overflow: hidden;
+  /* max-height: 350px; */
   padding: var(--standard-margin);
+}
+
+summary {
+  padding: 2rem;
 }
 
 section {
@@ -37,7 +42,7 @@ section {
 }
 
 .hoverable:hover {
-  background-color: rgba(0, 0, 255, 0.1);
+  background-color: var(--blue-overlay);
   transition: 0.4s all ease-in;
 }
 
@@ -51,10 +56,16 @@ form {
   height: 200px;
 }
 
-form > input {
-  /* min-width: 60rem; */
-  width: 90%;
+form > input,
+form > textarea {
+  margin-bottom: 0.2rem;
+  width: 75%;
   background-color: var(--light-grey);
+}
+
+#message {
+  height: 10rem;
+  resize: none;
 }
 
 #my-image {
@@ -108,12 +119,30 @@ nav {
 }
 
 nav {
-  background-color: var(--navbar-color);
+  background-color: var(--blue-overlay);
   display: flex;
   justify-content: flex-start;
-  padding: 1.5rem 0 1.5rem 0;
+  padding: 0;
+}
+
+nav > ul {
+  line-height: 3rem;
+  height: 100%;
+  /* background-color: blue; */
 }
 
 nav > ul > li {
   display: inline;
+}
+
+.form-buttons {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  margin-top: var(--standard-margin);
+  padding: var(--standard-margin);
+  width: 30%;
 }

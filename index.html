@@ -36,7 +36,7 @@
 
     <section id="About" class="hoverable">
       <h2>About Me</h2>
-      <p>
+      <summary class='about-me-summary'>
         <img id='my-image' src="https://via.placeholder.com/300" alt="Me" />
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut omnis ipsa architecto exercitationem modi ipsam
         porro. Recusandae illo voluptate aperiam, et delectus sed dolores, labore officia fugiat atque libero
@@ -51,31 +51,28 @@
         delectus cum, voluptatum labore necessitatibus sint recusandae, eius dolorem itaque, aperiam cupiditate.
         Nesciunt, natus optio. Labore nihil asperiores tenetur suscipit ducimus a assumenda beatae illo, id ipsa
         obcaecati harum
-      </p>
+      </summary>
     </section>
 
     <section id="Projects">
       <h2>Projects</h2>
 
       <article class="hoverable">
-        <h3>Project Name</h3>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita id quas aut nostrum, impedit sequi quam eos
-          similique qui rem neque odio sed fugit quisquam ipsum, fuga distinctio reiciendis doloribus. Iusto quae
-          laudantium consectetur harum repudiandae, praesentium repellat minus ullam!
-        </p>
-      </article>
-
-      <article class="hoverable">
-        <h3>Project Name</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptatum doloribus inventore illum a
-          quas voluptas quos ducimus nostrum culpa! Rerum, maiores debitis suscipit dolores accusantium magni iure
-          dignissimos labore, aut numquam doloribus temporibus natus, quaerat laborum itaque ipsa. Cumque unde dolorem
-          iure commodi quasi fuga magni vel aliquid eligendi animi, doloribus numquam esse deleniti! Voluptatum
-          reiciendis nobis totam animi. Quaerat, quas deleniti corrupti ipsum dignissimos debitis voluptatibus soluta
-          enim excep
-        </p>
+        <summary>
+          <h3 class='project-title'>Project Name</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita id quas aut nostrum, impedit sequi quam
+            eos
+            similique qui rem neque odio sed fugit quisquam ipsum, fuga distinctio reiciendis doloribus. Iusto quae
+            laudantium consectetur harum repudiandae, praesentium repellat minus ullam!
+          </p>
+          <figure class='project-figure'>
+            <img src="https://via.placeholder.com/300" alt="Project Image" />
+            <figcaption>
+              Mongo, Node, Express, Angular, React, Vue, Webpack
+            </figcaption>
+          </figure>
+        </summary>
       </article>
 
     </section>
@@ -86,10 +83,11 @@
       <form id="contact-form">
         <input type="text" name="name" placeholder="Name" />
         <input type="email" name="email" placeholder="Email" />
-        <input type="text" name="message" placeholder="Message" />
+        <textarea name="message" id='message' placeholder="Message"></textarea>
+        <!-- <input type="textarea" id='message' name="message" placeholder="Message" /> -->
         <div class='form-buttons'>
-          <button type="submit">Send</button>
-          <button type="reset">Reset</button>
+          <button class='btn' type="submit">Send</button>
+          <button class='btn' type="reset">Reset</button>
         </div>
 
       </form>
