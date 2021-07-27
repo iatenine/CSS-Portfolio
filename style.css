@@ -29,9 +29,21 @@ article {
   border-style: ridge;
   border-color: rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  /* max-height: 350px; */
-  padding: var(--standard-margin);
+  /* padding: var(--standard-margin); */
 }
+
+.project-image {
+  position: relative;
+  margin-left: 30%;
+  margin-top: var(--standard-margin);
+  margin-bottom: var(--standard-margin);
+}
+
+/* .project-footer {
+  position: relative;
+  bottom: 0;
+  background-color: red;
+} */
 
 summary {
   padding: 2rem;
