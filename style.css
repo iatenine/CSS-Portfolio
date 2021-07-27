@@ -85,7 +85,6 @@ form {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 200px;
 }
 
 form > input,
@@ -95,12 +94,18 @@ form > textarea {
   background-color: var(--light-grey);
 }
 
+label {
+    display: inline;
+    }
+input {
+    display: inline;
+    }
+
 section > h2 {
   margin: var(--standard-margin);
 }
 
 #message {
-  height: 10rem;
   resize: none;
 }
 
