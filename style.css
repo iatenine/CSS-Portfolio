@@ -1,0 +1,55 @@
+:root {
+  font-size: 16px;
+  --navbar-color: lightblue;
+  --standard-margin: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+section{
+    background-color: blueviolet;
+    margin-bottom: var(--standard-margin);
+}
+
+.banner {
+  max-height: 75px;
+  display: flex;
+  /* background-color: orange; */
+}
+
+.img-box {
+  /* background-color: aqua; */
+  flex-grow: 50;
+}
+
+.banner h1,
+.banner span {
+  text-align: right;
+  float: right;
+}
+
+.banner h1 {
+  font-size: 1.5rem;
+}
+
+.banner h2 {
+  font-size: 1.2rem;
+}
+
+nav {
+  background-color: var(--navbar-color);
+  display: flex;
+  justify-content: flex-start;
+  padding: 1.5rem 0 1.5rem 0;
+}
+
+nav > ul > li {
+  display: inline;
+}
