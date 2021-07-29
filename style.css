@@ -10,9 +10,9 @@
   --light-grey: rgba(0, 0, 255, 0.1);
   --standard-margin: 1rem;
   --blue-overlay: rgba(0, 0, 255, 0.1);
-  --submit-button-color: rgb(0, 175, 255);
-  --submit-button-hover: rgb(0, 0, 223);
-  --light-text-color: rgb(255, 255, 255);
+  --submit-button-color: rgb(0, 158, 231);
+  --submit-button-hover: aquamarine;
+  --light-text-color: black;
   --standard-gallery-image-size: 40.5vw;
 }
 
