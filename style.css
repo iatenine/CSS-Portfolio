@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto+Condensed&display=swap");
 
 :root {
-  font-size: 20px;
+  font-size: 120%;
   font-family: "Roboto Condensed", sans-serif;
-  background-color: mintcream;
+  background-color: lavender;
   --navbar-color: lightblue;
   --standard-text-color: black;
   --subtle-text-color: rgb(40, 40, 40);
@@ -36,6 +36,12 @@ article {
   border-style: ridge;
   border-color: rgba(0, 0, 0, 0.2);
   overflow: hidden;
+}
+
+.project-label-overlay {
+  position: absolute;
+  bottom: -25%;
+  left: 5%;
 }
 
 .project-image {
@@ -114,6 +120,9 @@ section > h2 {
   float: right;
   max-height: 100%;
   margin-left: var(--standard-margin);
+  margin-bottom: var(--standard-margin);
+  width: 248px;
+  height: 340px;
 }
 
 section {
@@ -203,6 +212,10 @@ nav > ul > li {
 
 /* Create media query breakpoint for mobile devices */
 @media (max-width: 768px) {
+  #my-image {
+    display: none;
+  }
+
   .btn {
     border-radius: 10%;
     width: 100%;
