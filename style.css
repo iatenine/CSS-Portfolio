@@ -97,7 +97,9 @@ article {
 }
 
 summary {
-  padding: 2rem;
+  padding-top: 0;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 section {
@@ -164,8 +166,9 @@ section > h2 {
   max-height: 100%;
   margin-left: var(--standard-margin);
   margin-bottom: var(--standard-margin);
-  width: 20%;
-  height: 20%;
+  margin-right: var(--standard-margin);
+  width: 15%;
+  height: 15%;
 }
 
 section {
