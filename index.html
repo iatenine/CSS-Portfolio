@@ -37,22 +37,14 @@
   <main>
 
     <section id="About" class="hoverable">
-      <h2>About Me</h2>
+      <h2>About</h2>
       <summary class='about-me-summary'>
         <img id='my-image' src="49344554_2328995237111893_4169132798700945408_o.jpg" alt="Me" />
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut omnis ipsa architecto exercitationem modi ipsam
-        porro. Recusandae illo voluptate aperiam, et delectus sed dolores, labore officia fugiat atque libero
-        necessitatibus repellat minus quibusdam, unde totam optio numquam enim iusto? Maxime facere dolorum quibusdam
-        officiis, ipsam deserunt. Eius, iste laudantium perferendis blanditiis voluptatem sit quos, porro inventore sunt
-        rerum neque ab! Nesciunt fuga, maiores, exercitationem repellat consequatur aliquam voluptates voluptas quasi
-        rem dolorem, aut ab quae laborum quia totam illo sunt id autem minus temporibus hic cumque. Modi optio ea nobis
-        eum! Perferendis neque quod culpa fuga dolorem rerum obcaecati mollitia magni, necessitatibus laboriosam laborum
-        voluptatum fugit quidem delectus minus nobis sit? Dolorem veritatis optio nobis autem unde, totam eius eos quam
-        deserunt mollitia? Ut dolores accusantium reprehenderit, alias nostrum cum voluptas illo, dignissimos
-        praesentium facilis numquam dolore. Dolorem, similique id? Enim libero repellendus placeat incidunt quam odio
-        delectus cum, voluptatum labore necessitatibus sint recusandae, eius dolorem itaque, aperiam cupiditate.
-        Nesciunt, natus optio. Labore nihil asperiores tenetur suscipit ducimus a assumenda beatae illo, id ipsa
-        obcaecati harum
+        Jack is a full-stack CS developer, specializing in developing stacks for IHOP. With a specialty in non-sense
+        lorem ipsuming he makes every page ooze with SEO. The unstoppable semi-readable about sections guarantee brain
+        anuerisms for the reader who often question whether he speaks English natively or possibly their own mental
+        state. This is probably about enough text to stop writing. One day I'll make a compelling body for this section
+        but it won't be on the same night I'm rushing to get my page to be mobile responsive and pushed up to the repo
       </summary>
     </section>
 
@@ -126,6 +118,19 @@
     </section>
   </aside>
 
+  <script>
+    function logSubmit() {
+      const fields = ['name', 'email', 'message']
+      for (let x = 0; x < fields.length; x++) {
+        console.log(form[fields[x]].value)
+      }
+      alert("This form has no meaningful functionality yet")
+      event.preventDefault();
+    }
+
+    const form = document.getElementById('contact-form');
+    form.addEventListener('submit', logSubmit);
+  </script>
 
   <footer>
     <p>&copy; 2021 Jack Linhart</p>
