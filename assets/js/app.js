@@ -39,7 +39,7 @@ $(document).ready(function () {
   addProject(
     "Currency Exchange App",
     "Current and Historical Forex Data",
-    "assets/img/horiseon-screenshot.png",
+    "assets/img/previews/currency-preview-2.png",
     "Alt Text 1",
     "https://iatenine.github.io/currency-exchange-app/",
     true
@@ -48,14 +48,14 @@ $(document).ready(function () {
   addProject(
     "Weather Dashboard",
     "Worldwide Weather Data",
-    "assets/img/horiseon-screenshot.png",
+    "assets/img/previews/weather-preview-desktop.png",
     "Alt Text 2",
     "https://iatenine.github.io/weather-dashboard/"
   );
   addProject(
     "Day Planner",
     "Hourly Day Planner",
-    "assets/img/horiseon-screenshot.png",
+    "assets/img/previews/planner-preview-desktop.png",
     "Alt Text 3",
     "https://iatenine.github.io/day-planner/"
   );
