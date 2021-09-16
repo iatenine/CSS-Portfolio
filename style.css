@@ -8,16 +8,11 @@
   --standard-text-color: black;
   --contrast-text-color: white;
   --subtle-text-color: rgb(40, 40, 40);
-  --light-grey: rgba(0, 0, 255, 0.1);
+  --nav-hover-color: aqua;
   --standard-margin: 1rem;
   --blue-overlay: lightblue;
 
   --project-caption-bg: rgba(0, 0, 0, 0.3);
-
-  --submit-button-color: rgb(0, 158, 231);
-  --submit-button-hover: aquamarine;
-  --reset-button-color: orange;
-  --reset-button-hover: orangered;
 
   --light-text-color: black;
   --standard-gallery-image-size: 40.5vw;
@@ -35,6 +30,11 @@ body {
 
 a {
   color: var(--contrast-text-color) !important;
+}
+
+.nav-link:hover {
+  color: var(--nav-hover-color) !important;
+  transition: 0.6s all ease-in;
 }
 
 h2 {
@@ -130,21 +130,6 @@ section {
 .hoverable:hover {
   background-color: var(--blue-overlay);
   transition: 0.4s all ease-in;
-}
-
-form {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-form > input,
-form > textarea {
-  margin-bottom: 0.2rem;
-  width: 75%;
-  background-color: var(--light-grey);
 }
 
 label {
@@ -265,26 +250,6 @@ nav > ul > li {
   width: 30%;
   display: flex;
   justify-content: space-evenly;
-}
-
-#submit-btn {
-  background-color: var(--submit-button-color);
-  color: var(--light-text-color);
-}
-
-#submit-btn:hover {
-  background-color: var(--submit-button-hover);
-  transition: 0.4s all ease-in;
-}
-
-#reset-btn {
-  background-color: var(--reset-button-color);
-  color: var(--light-text-color);
-}
-
-#reset-btn:hover {
-  background-color: var(--reset-button-hover);
-  transition: 0.4s all ease-in;
 }
 
 /* Create media query breakpoint for mobile devices */
