@@ -48,7 +48,7 @@ $(document).ready(function () {
     "Currency Exchange App",
     "Current and Historical Forex Data",
     "assets/img/previews/updated-forex-app.png",
-    "Alt Text 1",
+    "Form with options to select different currencies and set the date to check the exchange rate",
     "https://iatenine.github.io/currency-exchange-app/",
     true
   );
@@ -57,14 +57,14 @@ $(document).ready(function () {
     "Weather Dashboard",
     "Worldwide Weather Data",
     "assets/img/previews/weather-preview-desktop.png",
-    "Alt Text 2",
+    "5 day forecast app with city lookup and auto-complete",
     "https://iatenine.github.io/weather-dashboard/"
   );
   addProject(
     "Day Planner",
     "Hourly Day Planner",
     "assets/img/previews/planner-preview-desktop.png",
-    "Alt Text 3",
+    "Hourly day planner",
     "https://iatenine.github.io/day-planner/"
   );
 
