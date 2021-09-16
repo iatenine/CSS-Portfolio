@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="style.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -79,30 +80,61 @@
       </div>
     </section>
 
-  </main>
-
-  <aside>
-    <section id="contact">
-      <!-- Contact form -->
-      <form id="contact-form">
-
-        <label for="name">Name</label>
-        <input type="text" id='name' name="name" placeholder="Name" />
-
-        <label for="email">Email</label>
-        <input type="email" id='email' name="email" placeholder="Email" />
-
-        <label for="message">Message</label>
-        <textarea name="message" id='message' placeholder="Message" rows=6></textarea>
-
-        <div class='form-buttons'>
-          <button id='submit-btn' class='btn mx-1' type="submit">Submit</button>
-          <button id='reset-btn' class='btn hoverable mx-1' type="reset">Reset</button>
+    <!-- Projects Section -->
+    <section class="hoverable" id="contact">
+      <div class="container-fluid">
+        <!-- Include Github, LinkedIn, Email, phone number and resume -->
+        <h2>Contact</h2>
+        <div class="d-flex">
+          <div class="flex-grow-1">
+            <h3>
+              <a href="https://github.com/iatenine" class="contact-link" rel="noopener noreferrer" target="new">
+                <i class="fa fa-github-square" aria-hidden="true"></i>
+                GitHub
+              </a>
+            </h3>
+          </div>
+          <div class="flex-grow-1">
+            <h3>
+              <a href="https://linkedin.com/in/jack-linhart" class="contact-link" rel="noopener noreferrer"
+                target="new">
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                LinkedIn
+              </a>
+            </h3>
+          </div>
+          <div class="flex-grow-1">
+            <h3>
+              <a href="mailto:FullJackDevelopment@gmail.com" class="contact-link" rel="noopener noreferrer"
+                target="new">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                Email
+              </a>
+            </h3>
+          </div>
+          <div class="flex-grow-1">
+            <h3>
+              <a href="https://drive.google.com/file/d/1iY9m_c-F44DqWe5qguoQBK_KW5V3hLE2/view" class="contact-link"
+                rel="noopener noreferrer" target="new">
+                <i class="fa fa-briefcase" aria-hidden="true"></i>
+                Resume
+              </a>
+            </h3>
+          </div>
+          <div class="flex-shrink-1">
+            <h3>
+              <a href="#contact" class="contact-link" id="phone-contact">
+                <i class="fa fa-phone-square" aria-hidden="true"></i>
+                Phone
+              </a>
+            </h3>
+          </div>
         </div>
 
-      </form>
+      </div>
     </section>
-  </aside>
+
+  </main>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="./assets/js/app.js"></script>

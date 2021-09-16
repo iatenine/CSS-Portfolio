@@ -12,6 +12,8 @@
   --standard-margin: 1rem;
   --blue-overlay: lightblue;
 
+  --project-caption-bg: rgba(0, 0, 0, 0.3);
+
   --submit-button-color: rgb(0, 158, 231);
   --submit-button-hover: aquamarine;
   --reset-button-color: orange;
@@ -27,8 +29,7 @@ body {
   background-color: var(--standard-background-color) !important;
 }
 
-.hoverable,
-#contact-form {
+.hoverable {
   background-color: var(--section-background-color);
 }
 
@@ -63,6 +64,7 @@ article {
 .project-image {
   position: relative;
   margin: var(--standard-margin);
+  border-radius: 20px;
 }
 
 #my-image {
@@ -170,10 +172,16 @@ section > h2 {
   max-width: 35vw;
   cursor: pointer;
   overflow: hidden;
-
-  background-color: rgba(0, 0, 255, 0.3);
+  border-radius: 10px;
+  color: var(--standard-text-color);
+  background-color: var(--project-caption-bg);
   bottom: 1.8rem;
   left: 1.5rem;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: var(--standard-text-color) !important;
 }
 
 #message {

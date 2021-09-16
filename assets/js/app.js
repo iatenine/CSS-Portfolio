@@ -2,6 +2,8 @@ const projectsSection = $("#projects");
 const aboutSection = $("#about");
 const contactSection = $("#contact");
 
+const phoneLink = $("#phone-contact");
+
 const addProject = (
   title,
   subtitle,
@@ -34,6 +36,12 @@ const addProject = (
   projectsSection.find(".main-gallery").append(project);
 };
 
+const displayNumber = (e) => {
+  console.log("hello");
+  const verify = confirm("Please verify you are not a robot");
+  if (verify) alert("850.405.2403");
+};
+
 // Do inital stuff when page loads
 $(document).ready(function () {
   addProject(
@@ -59,4 +67,6 @@ $(document).ready(function () {
     "Alt Text 3",
     "https://iatenine.github.io/day-planner/"
   );
+
+  phoneLink.click(displayNumber);
 });
