@@ -4,25 +4,36 @@
   /* strip out moz background color */
   font-size: 120%;
   font-family: "Roboto Condensed", sans-serif;
-  --navbar-color: lightblue;
+  --navbar-color: black;
   --standard-text-color: black;
+  --contrast-text-color: white;
   --subtle-text-color: rgb(40, 40, 40);
   --light-grey: rgba(0, 0, 255, 0.1);
   --standard-margin: 1rem;
-  --blue-overlay: rgba(0, 0, 255, 0.1);
+  --blue-overlay: lightblue;
+
   --submit-button-color: rgb(0, 158, 231);
   --submit-button-hover: aquamarine;
+  --reset-button-color: orange;
+  --reset-button-hover: orangered;
+
   --light-text-color: black;
   --standard-gallery-image-size: 40.5vw;
+  --standard-background-color: aliceblue;
+  --section-background-color: var(--standard-background-color);
 }
 
-html {
-  background-color: lavender;
+body {
+  background-color: var(--standard-background-color) !important;
+}
+
+.hoverable,
+#contact-form {
+  background-color: var(--section-background-color);
 }
 
 a {
-  text-decoration: none;
-  color: black;
+  color: var(--contrast-text-color) !important;
 }
 
 h2 {
@@ -224,7 +235,7 @@ nav {
 }
 
 nav {
-  background-color: var(--blue-overlay);
+  background-color: var(--navbar-color);
   display: flex;
   justify-content: flex-start;
   padding: 0;
@@ -255,12 +266,14 @@ nav > ul > li {
   transition: 0.4s all ease-in;
 }
 
-.btn {
-  cursor: pointer;
-  margin: var(--standard-margin);
-  padding: var(--standard-margin);
-  width: 30%;
-  border-radius: 10%;
+#reset-btn {
+  background-color: var(--reset-button-color);
+  color: var(--light-text-color);
+}
+
+#reset-btn:hover {
+  background-color: var(--reset-button-hover);
+  transition: 0.4s all ease-in;
 }
 
 /* Create media query breakpoint for mobile devices */

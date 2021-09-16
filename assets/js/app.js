@@ -39,7 +39,7 @@ $(document).ready(function () {
   addProject(
     "Currency Exchange App",
     "Current and Historical Forex Data",
-    "assets/img/previews/currency-preview-2.png",
+    "assets/img/previews/updated-forex-app.png",
     "Alt Text 1",
     "https://iatenine.github.io/currency-exchange-app/",
     true
