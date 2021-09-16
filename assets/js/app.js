@@ -63,13 +63,22 @@ const displayNumber = (e) => {
 // Do inital stuff when page loads
 $(document).ready(function () {
   addProject(
+    "Ultimate System",
+    "Steam Match Finding Service",
+    "assets/img/previews/ultimate-system-splash.png",
+    "Splash page prompting user to login or signup",
+    "https://blooming-stream-34219.herokuapp.com/",
+    "https://github.com/iatenine/ultimate-system",
+    true
+  );
+
+  addProject(
     "Currency Exchange App",
     "Current and Historical Forex Data",
     "assets/img/previews/updated-forex-app.png",
     "Form with options to select different currencies and set the date to check the exchange rate",
     "https://iatenine.github.io/currency-exchange-app/",
-    "https://github.com/iatenine/currency-exchange-app",
-    true
+    "https://github.com/iatenine/currency-exchange-app"
   );
 
   addProject(
@@ -80,6 +89,16 @@ $(document).ready(function () {
     "https://iatenine.github.io/weather-dashboard/",
     "https://github.com/iatenine/weather-dashboard"
   );
+
+  addProject(
+    "Tech Blog",
+    "Text Based Blog",
+    "assets/img/previews/tech-blog-preview.png",
+    "User dashboard with options to create, view, update and delete posts",
+    "https://immense-stream-52076.herokuapp.com/dashboard",
+    "https://github.com/iatenine/tech-blog"
+  );
+
   addProject(
     "Day Planner",
     "Hourly Day Planner",
