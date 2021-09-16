@@ -170,7 +170,6 @@ section > h2 {
 .project-caption {
   position: absolute;
   max-width: 35vw;
-  cursor: pointer;
   overflow: hidden;
   border-radius: 10px;
   color: var(--standard-text-color);
@@ -197,6 +196,10 @@ section > h2 {
   width: 15%;
   height: 15%;
 }
+/* 
+.dummy-link {
+  cursor: default;
+} */
 
 section {
   margin-bottom: var(--standard-margin);

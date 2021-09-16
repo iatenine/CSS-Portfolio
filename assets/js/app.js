@@ -10,19 +10,37 @@ const addProject = (
   image,
   altText,
   deploymentLink,
+  sourceLink,
   first = false
 ) => {
+  // <a href='${deploymentLink}' target="no_blank"></a>
   const project = $(
     `<div class='gallery'>
         <div class='project-container'>
-          <a href='${deploymentLink}' target="no_blank">
+          <a class="dummy-link">
             <img class='project-image' src="${image}" alt="${altText}"/>
-          </a>
+            </a>
           <div class='project-caption'>
             <h3>${title}</h3>
             <h4>
               ${subtitle}
             </h4>
+            <div class="container">
+              <div class="row">
+                <div class="col-6">
+                  <a href="${deploymentLink}" class="contact-link" target="no_blank">
+                    Deploy
+                    <i class="fa fa-external-link" aria-hidden="true"></i> 
+                  </a>
+                </div>
+                <div class="col-6">
+                  <a href="${sourceLink}" class="contact-link" target="no_blank">
+                    Source
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>`
@@ -50,6 +68,7 @@ $(document).ready(function () {
     "assets/img/previews/updated-forex-app.png",
     "Form with options to select different currencies and set the date to check the exchange rate",
     "https://iatenine.github.io/currency-exchange-app/",
+    "https://github.com/iatenine/currency-exchange-app",
     true
   );
 
@@ -58,14 +77,16 @@ $(document).ready(function () {
     "Worldwide Weather Data",
     "assets/img/previews/weather-preview-desktop.png",
     "5 day forecast app with city lookup and auto-complete",
-    "https://iatenine.github.io/weather-dashboard/"
+    "https://iatenine.github.io/weather-dashboard/",
+    "https://github.com/iatenine/weather-dashboard"
   );
   addProject(
     "Day Planner",
     "Hourly Day Planner",
     "assets/img/previews/planner-preview-desktop.png",
     "Hourly day planner",
-    "https://iatenine.github.io/day-planner/"
+    "https://iatenine.github.io/day-planner/",
+    "https://github.com/iatenine/day-planner"
   );
 
   phoneLink.click(displayNumber);
