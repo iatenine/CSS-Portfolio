@@ -28,13 +28,13 @@ const addProject = (
             <div class="container">
               <div class="row">
                 <div class="col-6">
-                  <a href="${deploymentLink}" class="contact-link" target="no_blank">
+                  <a href="${deploymentLink}" class="caption-link" target="no_blank">
                     Deploy
                     <i class="fa fa-external-link" aria-hidden="true"></i> 
                   </a>
                 </div>
                 <div class="col-6">
-                  <a href="${sourceLink}" class="contact-link" target="no_blank">
+                  <a href="${sourceLink}" class="caption-link" target="no_blank">
                     Source
                     <i class="fa fa-github" aria-hidden="true"></i>
                   </a>

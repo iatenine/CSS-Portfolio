@@ -12,7 +12,7 @@
   --standard-margin: 1rem;
   --blue-overlay: lightblue;
 
-  --project-caption-bg: rgba(0, 0, 0, 0.3);
+  --project-caption-bg: rgba(0, 0, 0, 0.5);
 
   --light-text-color: black;
   --standard-gallery-image-size: 40.5vw;
@@ -157,10 +157,14 @@ section > h2 {
   max-width: 35vw;
   overflow: hidden;
   border-radius: 10px;
-  color: var(--standard-text-color);
+  color: var(--contrast-text-color);
   background-color: var(--project-caption-bg);
   bottom: 1.8rem;
   left: 1.5rem;
+}
+
+.caption-link {
+  text-decoration: none;
 }
 
 .contact-link {
