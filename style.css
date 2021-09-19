@@ -153,7 +153,7 @@ section > h2 {
 }
 
 .caption-header {
-  overflow-y: hidden;
+  overflow-y: auto;
   max-height: 5rem;
 }
 
