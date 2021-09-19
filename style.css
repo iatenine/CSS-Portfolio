@@ -258,7 +258,8 @@ nav > ul > li {
 
 /* Create media query breakpoint for mobile devices */
 @media (max-width: 768px) {
-  #my-image {
+  #my-image,
+  .contact-label {
     display: none;
   }
 
