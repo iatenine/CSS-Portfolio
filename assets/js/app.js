@@ -21,22 +21,28 @@ const addProject = (
             <img class='project-image' src="${image}" alt="${altText}"/>
             </a>
           <div class='project-caption'>
+            <div class="caption-header">
             <h3>${title}</h3>
-            <h4>
+            <h4 class="subtitle-label">
               ${subtitle}
             </h4>
+            </div>
             <div class="container">
               <div class="row">
                 <div class="col-6">
                   <a href="${deploymentLink}" class="caption-link" target="no_blank">
+                    <span class="contact-label">
                     Deploy
-                    <i class="fa fa-external-link" aria-hidden="true"></i> 
+                    </span>
+                    <i class="fa fa-external-link fa-2x" aria-hidden="true"></i> 
                   </a>
                 </div>
                 <div class="col-6">
                   <a href="${sourceLink}" class="caption-link" target="no_blank">
+                    <span class="contact-label">  
                     Source
-                    <i class="fa fa-github" aria-hidden="true"></i>
+                    </span>
+                    <i class="fa fa-github fa-2x" aria-hidden="true"></i>
                   </a>
                 </div>
               </div>

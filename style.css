@@ -152,9 +152,14 @@ section > h2 {
   position: relative;
 }
 
+.caption-header {
+  overflow-y: hidden;
+  max-height: 5rem;
+}
+
 .project-caption {
   position: absolute;
-  max-width: 35vw;
+  width: 60%;
   overflow: hidden;
   border-radius: 10px;
   color: var(--contrast-text-color);
@@ -256,8 +261,17 @@ nav > ul > li {
   justify-content: space-evenly;
 }
 
+.subtitle-label {
+  font-size: 1.2rem;
+}
+
 /* Create media query breakpoint for mobile devices */
 @media (max-width: 768px) {
+  .subtitle-label {
+    font-weight: 400;
+    font-size: 1rem;
+  }
+
   #my-image,
   .contact-label {
     display: none;
